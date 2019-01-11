@@ -1,0 +1,4 @@
+FROM akolkman/dotnet:2.1-aspnetcore-runtime AS base
+RUN mkdir -p /app/logs
+ADD ./ /app
+WORKDIR /app
